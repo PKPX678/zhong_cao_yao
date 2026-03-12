@@ -1,0 +1,69 @@
+# 模型相关的配置文件
+MODEL:
+  # 模型文件
+  WEIGHT: './weights/yolo11s-attention-SE/weights/best.pt'
+  # 阈值
+  CONF: 0.4
+  # 图片大小
+  IMGSIZE: 640
+
+
+UI:
+  # 背景图片
+  background: './icon/background.jpg'
+  # 主图
+  zhutu2: './icon/zhutu2.png'
+  # 最上方的名称
+  title: '中药材识别系统'
+  # 名称
+  label_title: '中药材识别系统'
+  # 标题字体颜色
+  label_title_color: "255, 255, 255"
+  # 开始识别按钮背景颜色
+  start_button_bg: "255,115,114"
+  # 开始识别按钮字体颜色
+  start_button_font: "0, 0, 0"
+  # 导出数据按钮颜色
+  export_button_bg: "255,115,114"
+  # 导出数据按钮字体颜色
+  export_button_font: "0, 0, 0"
+  # 图片填充 RGB格式
+  padvalue: [247, 212, 210]
+  # 表格每列的宽度
+  column_widths: [60, 240, 140, 250, 100, 100, 160]
+  # 表格中字体的颜色 RGB格式
+  column_color: [0, 0, 0]
+  # 主图区域颜色
+  label_img_color: "255, 255, 255, 50"
+  # 表格相关
+  table_widget_info_styles:
+    # 表头背景
+    header_background_color: "255,115,114"
+    # 表头字体
+    header_color: "white"
+    # 表格背景
+    background_color: "255,255,255"
+    # 滑过背景
+    item_hover_background_color: "255,115,114"
+
+CONFIG:
+  # 摄像头id
+  camera_num: 0
+  # 界面是否显示摄像头识别功能， False: 不显示  True: 显示
+  show_camera: true
+  # 是否显示中文 False: 显示英文标签  True: 显示中文标签
+  draw_chinese: true
+  chinese_name: {dandelion: 蒲公英, TrunpetflowerSeed: 木蝴蝶, black_tremella: 黑银耳, 
+      Oyster: 牡蛎, yiren: 薏苡仁, red_dates: 红枣, AntelopeHorn: 羚羊角, yam: 山药, 
+      BupleurumChinese: 柴胡, muli: 牡蛎, ginger: 生姜, RedLyciiFructus: 红枸杞, Garlic: 
+      大蒜, Shanzha: 山楂, tainma: 天麻, YellowChrysanthemumFlower: 黄菊花, bajiao: 八角, 
+      purple_Lingzhi: 紫灵芝, BlackLyciiFructus: 黑枸杞, redyiren: 红薏苡仁, 
+      BupleurumScorzonerifolium: 狭叶柴胡, haima: 海马, Sanqi: 三七, white_ginseng: 白参, 
+      ChuanXiong: 川芎, Zhizi: 栀子, Chantui: 蝉蜕, TrionycisCarapax: 鳖甲, pangdahai: 
+      胖大海, WhiteChrysanthemumFlower: 白菊花, SemenArecae: 槟榔, Shanyinhua: 山银花, 
+      red_ginseng: 红参, red_Lingzhi: 红灵芝, AngelicaDahurica: 白芷, white_Tremella: 
+      白木耳, lotusseeds: 莲子, black_dates: 黑枣, 无目标: 无目标}
+
+
+
+
